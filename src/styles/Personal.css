@@ -1,0 +1,26 @@
+.container{
+  background-image: url("../image/negra.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-container {
+    padding: 15%;
+}
+.text-container p {
+    color: white;
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-shadow: 2px 3px 5px rgba(255, 251, 251, 0.808);
+}
+@media (min-width: 1320px) {
+.text-container p {
+  font-size: xx-large;
+  letter-spacing: 6px;
+  line-height: 55px;
+
+}
+}
