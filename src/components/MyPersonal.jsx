@@ -1,27 +1,31 @@
 import React from "react";
 import '../styles/Personal.css'
+import { motion } from "framer-motion";
 
-const MyPersonal = () => {
+const MyPersonal = (props) => {
+
+    const f = props.t
 
     return (
 
-        <div className="container">
+        <div className="container"
+        >
+
             <div className="text-container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in aliquid veniam
-                    accusantium laborum illo reiciendis iste at eos. Mollitia perspiciatis
-                    molestias soluta vitae officia asperiores libero exercitationem reiciendis Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Aspernatur in aliquid veniam
-                    accusantium laborum illo reiciendis iste at eos. Mollitia perspiciatis
-                    molestias soluta vitae officia asperiores libero exercitationem reiciendis laudantium.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in aliquid veniam
-                    accusantium laborum illo reiciendis iste at eos. Mollitia perspiciatis
-                    molestias soluta vitae officia asperiores libero exercitationem reiciendis laudantium.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in aliquid veniam
-                    accusantium laborum illo reiciendis iste at eos. Mollitia perspiciatis
-                    molestias soluta vitae officia asperiores libero exercitationem reiciendis laudantium.
-                    laudantium.</p>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 3
+                    }}
+                    viewport={{ once: true }}
+                >
+                    <p>{f("my-personal.p1")}</p>
+                    <p>{f("my-personal.p2")}</p>
+                    <p>{f("my-personal.p3")}</p>
+                </motion.div>
             </div>
         </div>
     )
 }
-export default MyPersonal; 
+export default MyPersonal;

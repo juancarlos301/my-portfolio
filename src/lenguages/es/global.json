@@ -1,0 +1,43 @@
+{
+    "navbar": {
+        "about-me": "Sobre Mi",
+        "skills": "Habilidades",
+        "portfolio": "Portafolio",
+        "contact": "Contacto"
+    },
+    "presents": {
+        "me": "Hola!, soy Juan Carlos V",
+        "select": "Elegir lenguaje"
+    },
+    "my-personal": {
+        "p1": "Soy desarrollador frontend con un título técnico en desarrollo de software en el Sena, ahí fue mi comienzo desarrollando.",
+        "p2": "Casi todos mis conocimientos los he adquirido de forma autodidacta, me encanta aprender cosas nuevas, la tecnología, la lógica, compartir con la gente, entre muchas cosas más.",
+        "p3": "Entre esas otras cosas que me apasionan está ayudar a los demás y resolver problemas, por eso me encanta ser desarrollador de software."
+    },
+    "skills": {
+        "sentence": "nunca dejes de crecer, nunca dejes de aprender, nunca dejes de soñar",
+        "skill": "Habilidades",
+        "languages": "Lenguajes",
+        "hobbies": "Pasatiempos",
+        "read": "Leer",
+        "ejercise": "Ejercitarme",
+        "play": "Jugar Ajedrez",
+        "other": "Otros"
+    },
+    "carousel": {
+        "p1": "Esta es una tienda en línea, haz clic en ella y conoce más.",
+        "p2": "Estos son gráficos hechos con React-Charts, haz clic en él si quieres ver más al respecto."
+    },
+    "footer": {
+        "contact": "¡Encuéntrame aquí!"
+    },
+    "modal": {
+        "imp1": "Este proyecto es personal, creado a partir de Css, Html, React-Charts y React. Consiste en maquetar graficas online de diferentes redes, con interacciones que una gráfica podria tener; como quitarle datos a las graficas; este proyecto fue más que todo de maquetacion.",
+        "imp2": "El proyecto de maquetar un entorno de graficas y datos estuvo genial, probe a fondo el css grid y React-Charts",
+        "go": "Ir al proyecto",
+        "git": "Ver git",
+        "close": "Cerrar",
+        "im1p1": "Este proyecto es personal, creado a partir de Css, Html, Sass y React. Consiste en maquetar una tienda online de diferentes productos, con todas las interacciones que una tienda online tendría; como agregar productos a un carrito de compras, ver más especificacion del producto, crear una cuenta, iniciar sesión, etc.",
+        "im1p2": "Este es un proyecto que me emocionó bastante el hacerlo, fue todo un reto en su momento y disfruté cada parte de su realización."
+    }
+}

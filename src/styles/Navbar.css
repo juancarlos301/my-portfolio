@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
-.navbar {
-    font-family: 'Roboto Slab', serif;
+.navbar { 
     padding-top: 10px;
-    animation: 4s navbar 0.5s ease-in-out;
+    animation: 3s navbar 2.8s ease-in-out;
 }
 @keyframes navbar {
     0%{
@@ -13,17 +10,14 @@
         transform: translateY(0);
     }
 }
-
 .navbar .navbar-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 90%;
-    padding: 0 0 0 80px;
 }
 .navbar-content img{
     width: 50px;
-
 }
 .navbar-content ul{
     display: flex;
@@ -36,21 +30,96 @@
 .navbar-content ul li a{
     text-decoration: none;
     color: black;
-    font-weight: 600;
-    font-size: x-large;
+    font-size: large;
+    transition: all ease-in-out 300ms;
+}
+.navbar-content ul li a:hover{
+    background-color: rgba(214, 200, 200, 0.658);
+    border-bottom: 0.3rem solid #000;
+    transition: 0.3s ease-in;
+}
+.barras {
+display: none;
+position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {   
+    .navbar{
+        padding-top: 0;
+    }
+.navbar .navbar-content {
+    width: 70%;
+    height: 100vh;
+    padding: 0px;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.5s all ease-in;
+}
+
+.navbar .navbar-content.close {
+    left: -300px;
+    top: 0;
+}
+.navbar .navbar-content.open {
+    background-color: black;
+    left: 0; font-weight: 600;
+    top: 0;
+}
+.navbar-content ul{
+    margin: 0;
+    display: block;
+    min-height: 90vh;
+    padding-top: 60px;
+    }
+    .navbar-content ul li{
+    width: 70%;
+    margin: 0px 30px 30px;
+}
+.navbar-content ul li a{
+color: white;
+padding: 5px;
+}
+.navbar-content img{
+    display: none;
+}
+.barras {
+    position: absolute;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 4px;
+    display: block;
+    top:0;
+    left: 5px;
+}
+.barras button{
+    background: none;
+    border: none;
+}
+.barras span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px 0px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+}
+
+
+@media (min-width: 800px) {
     .navbar .navbar-content {
-        width: 90%;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 80px;
     }
     .navbar-content ul li a{
-        font-weight: 500;
-        font-size: large;
+        font-size: x-large;
     }
 }
-@media (min-width: 1320px) {
+@media (min-width: 1316px) {
 .navbar-content ul li a{
     font-size: xx-large;
 

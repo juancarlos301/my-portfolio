@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/Navbar.css'
 import img from '../image/logo512.png'
-const Navbar = () => {
 
+
+const Navbar = (props) => {
+
+    const f = props.t
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
     return (
-        <nav className="navbar">
-            <div className="navbar-content">
+        <nav className="navbar"
+        >
+            <div
+                className={click ? "navbar-content open" : "navbar-content close"}
+            >
                 <img src={img} alt="" />
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sobre Mi</a></li>
-                    <li><a href="">Portafolio Web</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#my">{f("navbar.about-me")}</a></li>
+                    <li><a href="#skills">{f("navbar.skills")}</a></li>
+                    <li><a href="#abajo">{f("navbar.portfolio")}</a></li>
+                    <li><a href="#footer">{f("navbar.contact")}</a></li>
                 </ul>
             </div>
+
+            <div className="barras">
+                <button onClick={handleClick}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
 
         </nav>
 

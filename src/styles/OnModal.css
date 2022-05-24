@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Poppins:wght@100&display=swap');
+.container-modal{
+    width: 75%;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+    border-radius: 15px;
+    animation: .5s modal ease-in-out;
+}
+@keyframes modal {
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.container-img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.container-img button{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    display: flex;
+}
+.container-img button img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-words{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 5%;
+
+}
+.container-words p {
+    font-size: 1rem;
+    color: rgba(255, 250, 250, 0.986);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.containers-buttons{
+    margin-bottom: 10px;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    max-width: 80px;
+    animation: 1.5s buttons ease-in-out;
+    
+}
+
+@keyframes buttons {
+    0%{
+        transform: translatex(800px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.containers-buttons a{
+    text-decoration: none;
+}
+.containers-buttons a button{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: burlywood;
+    padding: 2px;
+    border-radius: 20px;
+    font-size: small;
+    margin: 5px 3px;
+    cursor: pointer;
+    border: 0;
+}
+.containers-buttons a button:hover{
+    background-color: darkolivegreen;
+}
+.containers-buttons  button{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: burlywood;
+    padding: 2px;
+    border-radius: 20px;
+    font-size: medium;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.containers-buttons  button:hover{
+    background-color: rgb(177, 54, 38);
+}
+.containers-buttons  button p{
+    margin: 0 4px;
+}
+@media (min-width: 800px) {
+    .containers-buttons a button{
+        padding: 6px;
+        margin: 7px 3px 7px 3px;
+        font-size: medium;
+
+    }
+    .containers-buttons  button{
+        padding: 10px;
+        margin: 5px 15px 5px 10px;
+    }
+    .containers-buttons{
+    max-width: 120px;
+    }
+    }
+    @media (min-width: 1031px) {
+        .containers-buttons a button{
+            padding: 10px;
+            font-size: large;
+            margin: 10px 10px 10px 10px;
+        }
+        .containers-buttons  button{
+            padding: 10px;
+            font-size: large;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        .containers-buttons{
+        max-width: 200px;
+        }
+        }

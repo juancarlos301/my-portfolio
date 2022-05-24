@@ -1,25 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 .container{
-  background-image: url("../image/negra.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto Slab', serif;
 }
 .text-container {
     padding: 15%;
 }
-.text-container p {
+.text-container div p {
     color: white;
     font-size: large;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 35px;
-    text-shadow: 2px 3px 5px rgba(255, 251, 251, 0.808);
 }
 @media (min-width: 1320px) {
-.text-container p {
-  font-size: xx-large;
-  letter-spacing: 6px;
+.text-container div p {
+  font-size: x-large;
+  letter-spacing: 4px;
   line-height: 55px;
 
 }

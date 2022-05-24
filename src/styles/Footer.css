@@ -4,9 +4,13 @@
     height:100%;
     width: 100%;
 }
+.footer svg {
+    width: 40px;
+    height: 24px;
+}
 .footer .footer-part-1 {
     min-width: 100%;
-    background-color: grey;
+    background-color: rgba(2, 14, 53, 0.979);
     min-height: 25vh;
 }
 .footer-part-1 p:nth-child(1) {
@@ -14,6 +18,8 @@
     font-weight: 500;
     margin: 0px 0 5px 80px;
     padding-top: 4%;
+    color: rgba(240, 248, 255, 0.705);
+
 }
 .footer-part-1 p:nth-child(2) {
     color: rgba(240, 248, 255, 0.705);
@@ -23,29 +29,33 @@
 .footer .footer-part-2 {
     min-width: 100%;
     background-color: rgb(3, 3, 3);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     min-height: 15vh;
+    padding: 0% 0%;
 }
+/* display: flex;
+ flex-wrap: wrap; 
+ justify-content: center;
+ align-items: center;*/
 .footer-part-2 a{
     color: rgba(240, 248, 255, 0.705);
-    font-size: 2.5rem;
     text-decoration: none;
-    margin-top: 20px;
+    display: inline;
+    padding: 2px 6px;
 }
+/*font-size: 2.5rem; */
+/*margin: 20px 10px 0px 10px;*/
 .footer-part-2 a:hover{
     color: white;
 }
-.footer-part-2 .pp{
-    font-size: 2rem;
-    color: rgba(240, 248, 255, 0.705);
-    margin: 0px 15px 0px 15px;
+h3{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.footer-part-2 .pp1{
-    font-size: 2rem;
-    color: rgba(240, 248, 255, 0.705);
+.footer-part-2 a svg{
+    width: 40px;
+    height: 24px;
 }
 @media (max-width: 800px) {
     .footer-part-1 p:nth-child(2) {
@@ -59,17 +69,13 @@
         padding-top: 4%;
     }
     .footer-part-2 a{
-        font-size: 1.7rem;
-        text-decoration: none;
+        display: block;
+        padding: 10px 0;
     }
-    .footer-part-2 .pp{
-        visibility: hidden;
-    }
+.footer .footer-part-2 {
+    padding: 1% 0%;
+
 }
-@media (max-width: 800px) {
-    .footer-part-1 p:nth-child(2) {
-        margin: 0 0 20px 80px;
-    }
 }
 @media (min-width: 1320px) {
     .footer-part-1 p:nth-child(2) {
@@ -81,7 +87,10 @@
         font-size: 4rem;
         font-weight: 600;
     }
-    .footer-part-2 a{
-        font-size: 3rem;
-    }
 }
+@media (min-width: 1400px) {
+    .footer-part-1 p:nth-child(2) {
+margin-bottom: 120px;
+
+    }
+    }

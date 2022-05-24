@@ -1,0 +1,42 @@
+{
+    "navbar": {
+        "about-me": "About Me",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "presents": {
+        "me": "Hi!, I'm Juan Carlos V",
+        "select": "Select language"
+    },
+    "my-personal": {
+        "p1": "I'm frontend development with a technical degree in software development at Sena, there was my start in development.",
+        "p2": "Almost all my knowledge I have acquired in a self-taught way, i love learning new things, technology, logic, sharing with people, among many other things.",
+        "p3": "Among those other things that I am passionate about is helping others and solving problems, and that is why I love being a software developer."
+    },
+    "skills": {
+        "sentence": "Never stop growing, never stop learning, never stop dreaming",
+        "languages": "Languages",
+        "hobbies": "Hobbies",
+        "read": "Read",
+        "ejercise": "Do exercise",
+        "play": "Play Chess",
+        "other": "Others"
+    },
+    "carousel": {
+        "p1": "This is an online store, click on it and learn more about it.",
+        "p2": "These are graphs made with React-Charts, click on it if you want to see more about it."
+    },
+    "footer": {
+        "contact": "Find me here!"
+    },
+    "modal": {
+        "imp1": "This project is personal, created from Css, Html, React-Charts and React. It consists of laying out online graphics of different networks, with interactions that a graphic could have; how to remove data from graphs; this project was more than all layout.",
+        "imp2": "The project of laying out a graph and data environment was great, I thoroughly tested the css grid and React-Charts.",
+        "go": "Go to project",
+        "git": "See git",
+        "close": "Close",
+        "im1p1": "This project is personal, created from Css, Html, Sass and React. It consists of laying out an online store for different products, with all the interactions that an online store would have; such as adding products to a shopping cart, viewing more product specifications, creating an account, logging in, etc.",
+        "im1p2": "This is a project that I was quite excited to do, it was quite a challenge at the time and I enjoyed every part of its realization."
+    }
+}
