@@ -96,20 +96,22 @@ const PhraseAndSkills = (props) => {
                     ))}
                 </div>
                 <div className="container-alllenguages">
-                    <motion.h1 className="h1-lenguages"
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1.2 }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeOut",
-                            type: "spring"
-                        }}
-                    >
-                        <a name="skills" href="none" className="punto">.</a>
-                        {f("skills.languages")}</motion.h1>
+                    <div className="containerh1">
+                        <motion.h1 className="h1-lenguages"
+                            initial={{ scale: 0 }}
+                            whileInView={{ scale: 1.2 }}
+                            transition={{
+                                duration: 2,
+                                ease: "easeOut",
+                                type: "spring"
+                            }}
+                        >
+                            <a name="skills" href="none" className="apunto">.</a>
+                            {f("skills.languages")}</motion.h1>
+                    </div>
                     <motion.div className="div-col"
-                        initial={{ x: 200 }}
-                        whileInView={{ x: 0 }}
+                        initial={{ x: 100 }}
+                        whileInView={{ x: 1 }}
                         transition={{
                             duration: 3.5,
                             ease: "easeOut",
@@ -121,8 +123,8 @@ const PhraseAndSkills = (props) => {
                         <h2>C2</h2>
                     </motion.div>
                     <motion.div className="div-col"
-                        initial={{ x: 300 }}
-                        whileInView={{ x: 0 }}
+                        initial={{ x: 150 }}
+                        whileInView={{ x: 1 }}
                         transition={{
                             duration: 3.5,
                             ease: "easeOut",
@@ -145,7 +147,7 @@ const PhraseAndSkills = (props) => {
                 </Modal>
             )}
             <div className="container-carousel">
-                <a name="abajo" href="none" >.</a>
+                <a name="abajo" href="none" className="apunto2">.</a>
                 <h1>{f("navbar.portfolio")}</h1>
                 <Carousel
                     setOpenModal={setOpenModal}

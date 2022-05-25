@@ -15,7 +15,7 @@ const Hobbies = (props) => {
         <div className="c-hobbies">
 
             <motion.p className="p-first"
-                initial={{ x: 300 }}
+                initial={{ x: 200 }}
                 whileInView={{ x: 1 }}
                 transition={{
                     duration: 2.5,

@@ -52,3 +52,9 @@
     height: 20px;
     margin-left: 10px;
 }
+@media (max-width: 500px) {
+.c-hobbies .p-first{
+font-size: 
+3rem;
+}
+}

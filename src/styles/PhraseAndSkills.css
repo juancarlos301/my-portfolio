@@ -25,7 +25,7 @@ width: 100%;
     margin-top: 10%;
 }
 .container-p div .parrafo-1{
-    font-size: x-large;
+    font-size: medium;
     color: rgb(236, 236, 236);
     font-family: 'Roboto Slab', serif;
     width: 30vw;
@@ -42,7 +42,7 @@ width: 100%;
     flex-wrap: wrap;
 }
 .containerin .h1-skills {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: aliceblue;
   text-shadow: -2px 4px 8px rgb(100, 96, 96) ;
   margin-right: 60vw;
@@ -74,11 +74,9 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 14vw;
-    min-width: 700px;
 }
 .containerin .h1-lenguages{
-    margin-right: 20vw;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: aliceblue;
   text-shadow: -2px 4px 8px rgb(100, 96, 96) ;
 }
@@ -94,9 +92,6 @@ width: 100%;
    color: aliceblue;
    text-align: center;
    margin-top: 0;
-}
-.containerin .punto{
-visibility: hidden;
 }
 .container-carousel{
     display: flex;
@@ -120,13 +115,19 @@ visibility: hidden;
     margin-left: 14vw;
 
 }
+.apunto{
+    visibility: hidden;
+}
+.apunto2{
+    visibility: hidden;
+}
+.containerh1 {
+    min-width: 100%;
+}
 @media (min-width:600px) {
     .container-p div .imagenn{
         width: 160px;
         height: 160px;
-    }
-    .containerin .h1-lenguages{
-        margin-right: 60vw;
     }
     }
 @media (min-width:800px) {
@@ -134,15 +135,22 @@ visibility: hidden;
   margin-right: 60vw;
 }
 .containerin .h1-lenguages{
-    margin-right: 60vw;
+    font-size: 3.5rem;
 }
-
+.containerin .h1-skills {
+    font-size: 3.5rem;
+}
 .container-p div .imagenn{
     width: 300px;
     height: 300px;
 }
 .container-p div .parrafo-1{
     margin-top: 16%;
+    font-size: x-large;
+
+}
+.containerin .container-alllenguages{
+min-width: 700px;
 }
 }
 @media (min-width:1000px) {
@@ -155,9 +163,6 @@ visibility: hidden;
 }
 .uno .containerin .h1-skills {
   margin-right: 80vw;
-}
-.containerin .h1-lenguages{
-    margin-right: 80vw;
 }
 }
 @media (min-width:1316px) {
