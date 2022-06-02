@@ -22,10 +22,25 @@
    z-index: 2;
    max-height: 500px;
    position: relative;
+   
+}
+.carousel .slide.pet{
+    display: flex;
+   justify-content: center;
 }
 .carousel .slide img{
     width: 100%;
    vertical-align: top;
+}
+.carousel .slide .img1{
+    width:56%;
+   vertical-align: top;
+   max-height: 100%;
+   border-radius: 10px;
+}
+.butpet {
+    background-color: black;
+    border: none;
 }
 .container-text{
     width: 100%;
@@ -84,6 +99,10 @@
 position: relative;
 height: 55px;
 
+}
+.carousel .slide.pet{
+    display: block;
+   justify-content: center;
 }
 }
 @media (min-width: 1000px) {

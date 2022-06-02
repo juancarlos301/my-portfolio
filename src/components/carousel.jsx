@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import '../styles/Carousel.css'
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 //imagenes
-import Img1 from '../image/imagen1.png'
+import Img1 from '../image/petgram.png'
 import Img2 from '../image/imagen2.png'
 //import Img3 from '../image/imagen3.png'
 
@@ -66,11 +66,11 @@ const Carousel = (props) => {
     return (
         <div className="carousel">
             <div className="slide-show" ref={slideShow}>
-                <div className="slide">
-                    <button
+                <div className="slide pet">
+                    <button className="butpet"
                         onClick={onClickButton}
                     >
-                        <img src={Img1} alt="" className="img" />
+                        <img src={Img1} alt="" className="img1" />
                     </button>
                     <div className="container-text">
                         <p>{f("carousel.p1")}</p>

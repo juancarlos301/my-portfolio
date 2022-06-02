@@ -24,6 +24,7 @@ code {
 }
 .container-1 {
   background-image: url("../image/mia.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -89,6 +90,7 @@ border: none;
 width: 200px;
 height: 50px;
 font-family: 'Roboto Slab', serif;
+cursor: pointer;
 }
 .buttonsl button:hover{
   background-color: rgb(60, 116, 116);
@@ -121,4 +123,9 @@ font-family: 'Roboto Slab', serif;
 .buttonsl {
 width: 80%;
 }
+}
+@media (max-width: 400px) {
+  .container-1 {
+    background-image: url("../image/mia1.jpg");
+  }
 }

@@ -35,6 +35,9 @@
     border-radius: 10px;
     cursor: pointer;
 }
+.container-img button .petimg{
+    width: 70%;
+}
 .container-words{
     width: 70%;
     margin-top: 10px;
@@ -54,6 +57,11 @@
     max-width: 80px;
     animation: 1.5s buttons ease-in-out;
     
+}
+.containers-buttons.buttonspet{
+    left: 60%;
+    top: 6%;
+
 }
 
 @keyframes buttons {
@@ -106,6 +114,11 @@
         font-size: medium;
 
     }
+    .containers-buttons.buttonspet{
+
+        top: 25%;
+    
+    }
     .containers-buttons  button{
         padding: 10px;
         margin: 5px 15px 5px 10px;
@@ -129,4 +142,10 @@
         .containers-buttons{
         max-width: 200px;
         }
+        
         }
+    @media (min-width: 900px) {
+        .container-img button .petimg{
+            width: 50%;
+        }
+    }

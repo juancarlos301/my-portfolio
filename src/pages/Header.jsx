@@ -20,6 +20,9 @@ const Header = () => {
         i18n.changeLanguage("es")
         setChoose(prevState => !prevState)
     }
+    const view = i18n.language
+
+
 
     return (
         <div className="page">
@@ -87,9 +90,10 @@ const Header = () => {
                             t={t}
                         />
                     </div>
-                    <div className="container-3">
+                    <div className="container-3" >
                         <PhraseAndSkills
                             t={t}
+                            view={view}
                         />
                     </div>
                 </>

@@ -24,7 +24,7 @@
         "other": "Others"
     },
     "carousel": {
-        "p1": "This is an online store, click on it and learn more about it.",
+        "p1": "This is an instagram type app, click on it and learn more.",
         "p2": "These are graphs made with React-Charts, click on it if you want to see more about it."
     },
     "footer": {
@@ -36,7 +36,7 @@
         "go": "Go to project",
         "git": "See git",
         "close": "Close",
-        "im1p1": "This project is personal, created from Css, Html, Sass and React. It consists of laying out an online store for different products, with all the interactions that an online store would have; such as adding products to a shopping cart, viewing more product specifications, creating an account, logging in, etc.",
-        "im1p2": "This is a project that I was quite excited to do, it was quite a challenge at the time and I enjoyed every part of its realization."
+        "im1p1": "This is a personal project, created from react, styled components, GraphQl and React-apollo, it consists of laying out an instagram-type application. ",
+        "im1p2": "The theme is pets. Where you can like, register, log in, it has a section of your favorite photos, among other things."
     }
 }

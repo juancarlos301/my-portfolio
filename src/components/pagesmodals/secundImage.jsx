@@ -1,7 +1,7 @@
 import React from "react";
 import '../../styles/OnModal.css'
 import Img2 from '../../image/imagen2.png'
-import { BsFillXCircleFill, BsGithub, BsFillArrowUpSquareFill } from "react-icons/bs";
+import { BsFillXCircleFill, BsGithub } from "react-icons/bs";
 
 const SecundImage = (props) => {
 
@@ -27,13 +27,6 @@ const SecundImage = (props) => {
                 <p>{f("modal.imp2")}</p>
             </div>
             <div className="containers-buttons">
-                <a href="/">
-                    <button>
-                        <BsFillArrowUpSquareFill />
-
-                        {f("modal.go")}
-                    </button>
-                </a>
                 <a href="/">
                     <button>
                         <BsGithub />

@@ -6,7 +6,7 @@
     min-width: 100%;
 }
 .c-hobbies .p-first{
-    font-size: 4.2rem;
+    font-size: 2.7rem;
     color: aliceblue;
     text-shadow: -2px 4px 8px rgb(100, 96, 96) ;
     font-weight: 900;
@@ -52,9 +52,13 @@
     height: 20px;
     margin-left: 10px;
 }
-@media (max-width: 500px) {
+@media (min-width: 400px) {
 .c-hobbies .p-first{
-font-size: 
-3rem;
+    font-size: 3rem;
+}
+}
+@media (min-width: 600px) {
+.c-hobbies .p-first{
+font-size: 4.2rem;
 }
 }

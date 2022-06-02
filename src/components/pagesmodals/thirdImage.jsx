@@ -1,7 +1,7 @@
 import React from "react";
 import '../../styles/OnModal.css'
 import Img1 from '../../image/imagen3.png'
-import { BsFillXCircleFill, BsGithub, BsFillArrowUpSquareFill } from "react-icons/bs";
+import { BsFillXCircleFill, BsGithub } from "react-icons/bs";
 
 const ThirdImage = (props) => {
 
@@ -31,12 +31,6 @@ const ThirdImage = (props) => {
             <div className="containers-buttons">
                 <a href="/">
                     <button>
-                        <BsFillArrowUpSquareFill />
-                        Ver repositorio
-                    </button>
-                </a>
-                <a href="/">
-                    <button>
                         <BsGithub />
                         Ir al Proyecto
                     </button>
@@ -45,7 +39,6 @@ const ThirdImage = (props) => {
                     onClick={CloseModal}
                 >
                     <BsFillXCircleFill />
-
                     volver
                 </button>
 

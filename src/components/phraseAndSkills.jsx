@@ -77,7 +77,7 @@ const PhraseAndSkills = (props) => {
                 }}
             >
                 <div className="div-skills">
-                    <motion.h1 className="h1-skills"
+                    <motion.h1 className={props.view === 'es' ? "h1-skills spanish" : "h1-skills"}
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1.2 }}
                         transition={{
@@ -138,6 +138,7 @@ const PhraseAndSkills = (props) => {
                 <div className="hobbies-c">
                     <Hobbies
                         f={f}
+                        view={props.view}
                     />
                 </div>
             </motion.div>

@@ -1,7 +1,7 @@
 import React from "react";
 import '../../styles/OnModal.css'
-import Img1 from '../../image/imagen1.png'
-import { BsFillXCircleFill, BsGithub, BsFillArrowUpSquareFill } from "react-icons/bs";
+import Img1 from '../../image/petgram.png'
+import { BsFillXCircleFill, BsGithub } from "react-icons/bs";
 
 const FirtsImage = (props) => {
     const f = props.f
@@ -15,23 +15,15 @@ const FirtsImage = (props) => {
                 <button
                     onClick={CloseModal}
                 >
-                    <img src={Img1} alt="" />
+                    <img src={Img1} alt="" className="petimg" />
                 </button>
             </div>
             <div className="container-words">
                 <p>{f("modal.im1p1")}</p>
                 <p>{f("modal.im1p2")}</p>
             </div>
-            <div className="containers-buttons">
-                <a href="/">
-                    <button>
-                        <BsFillArrowUpSquareFill />
-                        <p>
-                            {f("modal.go")}
-                        </p>
-                    </button>
-                </a>
-                <a href="/">
+            <div className="containers-buttons buttonspet">
+                <a href="https://github.com/juancarlos301/petgram" target="_blank" rel="noreferrer">
                     <button>
                         <BsGithub />
                         <p>

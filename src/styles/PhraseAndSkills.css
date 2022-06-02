@@ -48,6 +48,15 @@ width: 100%;
   margin-right: 60vw;
 
 }
+.containerin .h1-skills.spanish{ 
+    margin-right: 0;
+    font-size: 2rem;
+    color: aliceblue;
+  text-shadow: -2px 4px 8px rgb(100, 96, 96) ;
+  margin-right: 20vw;
+
+}
+
 .containerin .div-skills{
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +82,7 @@ width: 100%;
 .containerin .container-alllenguages{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 14vw;
+    margin-left: 17vw;
 }
 .containerin .h1-lenguages{
     font-size: 2.5rem;
@@ -124,11 +133,19 @@ width: 100%;
 .containerh1 {
     min-width: 100%;
 }
+@media (min-width:400px) {
+    .containerin .h1-skills.spanish{ 
+        font-size: 3rem;
+        }
+}
 @media (min-width:600px) {
     .container-p div .imagenn{
         width: 160px;
         height: 160px;
     }
+    .containerin .h1-skills.spanish{ 
+        margin-right: 37vw;
+        }
     }
 @media (min-width:800px) {
 .uno .containerin .h1-skills {

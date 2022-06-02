@@ -25,7 +25,7 @@
         "other": "Otros"
     },
     "carousel": {
-        "p1": "Esta es una tienda en línea, haz clic en ella y conoce más.",
+        "p1": "Esta es una aplicació tipo instagram, haz clic en ella y conoce más.",
         "p2": "Estos son gráficos hechos con React-Charts, haz clic en él si quieres ver más al respecto."
     },
     "footer": {
@@ -37,7 +37,7 @@
         "go": "Ir al proyecto",
         "git": "Ver git",
         "close": "Cerrar",
-        "im1p1": "Este proyecto es personal, creado a partir de Css, Html, Sass y React. Consiste en maquetar una tienda online de diferentes productos, con todas las interacciones que una tienda online tendría; como agregar productos a un carrito de compras, ver más especificacion del producto, crear una cuenta, iniciar sesión, etc.",
-        "im1p2": "Este es un proyecto que me emocionó bastante el hacerlo, fue todo un reto en su momento y disfruté cada parte de su realización."
+        "im1p1": "Este es un proyecto personal, creado a partir de react, styled components, GraphQl y React-apollo, consiste en maquetar una aplicación tipo instagram.",
+        "im1p2": "La temática es de mascotas, En donde puedes darle like, registrarte, iniciar sesión, tiene un apartado de tus fotos preferidas, entre otras cosas."
     }
 }
