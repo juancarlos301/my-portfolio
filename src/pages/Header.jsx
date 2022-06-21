@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Navbar from '../components/Navbar';
 import MyPersonal from "../components/MyPersonal";
 import { motion } from "framer-motion";
 import PhraseAndSkills from '../components/phraseAndSkills'
-import { useTranslation } from "react-i18next";
+import { AppContext } from "../context";
+
 //css
 import '../styles/index.css'
 
 const Header = () => {
 
-    const [t, i18n] = useTranslation("global")
-    const [choose, setChoose] = useState(true)
+    const { t, i18n, choose, setChoose } = useContext(AppContext)
+
 
     const onclickChoose = () => {
         i18n.changeLanguage("en")
@@ -27,7 +28,6 @@ const Header = () => {
     return (
         <div className="page">
             <div className="container-1">
-                <a name="UP" href="none">.</a>
                 <Navbar
                     t={t} />
 
@@ -84,8 +84,8 @@ const Header = () => {
             </div>
             {!choose && (
                 <>
-                    <a name="my" href="none">{ }</a>
                     <div className="container-2">
+                        <a name="my" href="none" className="anchor">.</a>
                         <MyPersonal
                             t={t}
                         />

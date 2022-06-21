@@ -1,22 +1,28 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import '../styles/Carousel.css'
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 //imagenes
-import Img1 from '../image/petgram.png'
+import Img1 from '../image/petgram2.png'
 import Img2 from '../image/imagen2.png'
-//import Img3 from '../image/imagen3.png'
+import Img3 from '../image/movie1.png'
+import { useNavigate } from 'react-router-dom';
+import { AppContext } from "../context";
+const Carousel = () => {
+    const navigate = useNavigate()
+    const { t, setOpenProject2 } = useContext(AppContext)
 
-const Carousel = (props) => {
-
-    const f = props.f
-
+    const f = t
     const onClickButton = () => {
-        props.setOpenModal(prevState => !prevState)
-
+        navigate('/detail')
     }
     const onClickButton2 = () => {
-        props.setOpenModal(prevState => !prevState)
-        props.setOpenProyect2(prevState => prevState + 1)
+        setOpenProject2(prevState => prevState + 1)
+        navigate('/detail')
+
+    }
+    const onClickButton3 = () => {
+        setOpenProject2(prevState => prevState + 2)
+        navigate('/detail')
     }
 
     const slideShow = useRef(null)
@@ -70,8 +76,9 @@ const Carousel = (props) => {
                     <button className="butpet"
                         onClick={onClickButton}
                     >
-                        <img src={Img1} alt="" className="img1" />
+                        <img src={Img1} alt="" />
                     </button>
+
                     <div className="container-text">
                         <p>{f("carousel.p1")}</p>
                     </div>
@@ -82,6 +89,17 @@ const Carousel = (props) => {
                     >
                         <img src={Img2} alt="" className="img" />
                     </button>
+                    <div className="container-text">
+                        <p>{f("carousel.p2")}</p>
+                    </div>
+                </div>
+                <div className="slide">
+                    <button
+                        onClick={onClickButton3}
+                    >
+                        <img src={Img3} alt="" className="img" />
+                    </button>
+
                     <div className="container-text">
                         <p>{f("carousel.p2")}</p>
                     </div>

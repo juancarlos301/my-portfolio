@@ -34,7 +34,6 @@
     transition: all ease-in-out 300ms;
 }
 .navbar-content ul li a:hover{
-    background-color: rgba(214, 200, 200, 0.658);
     border-bottom: 0.3rem solid #000;
     transition: 0.3s ease-in;
 }

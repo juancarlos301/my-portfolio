@@ -105,6 +105,12 @@ cursor: pointer;
   color: rgba(255, 255, 255, 0.63);
   text-shadow: 1px 2px 1px;
 }
+.anchor {
+  visibility: 0;
+}
+.backDetail {
+  background-color: #000;
+}
 
 @media (max-width: 800px) {
 .container-1 {

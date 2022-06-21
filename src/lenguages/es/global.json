@@ -38,6 +38,14 @@
         "git": "Ver git",
         "close": "Cerrar",
         "im1p1": "Este es un proyecto personal, creado a partir de react, styled components, GraphQl y React-apollo, consiste en maquetar una aplicación tipo instagram.",
-        "im1p2": "La temática es de mascotas, En donde puedes darle like, registrarte, iniciar sesión, tiene un apartado de tus fotos preferidas, entre otras cosas."
+        "im1p2": "La temática es de mascotas, En donde puedes darle like, registrarte, iniciar sesión, tiene un apartado de tus fotos preferidas, entre otras cosas.",
+        "imoviep1": "Este es un proyecto sobre una página de  películas, el reto con este proyecto fué que la meta era hacerlo en dos días, cosa que cumplí.",
+        "imoviep2": "Esté proyecto está hecho con react, css, utilizando la api de The Movie db, en esta aplicacion pueden elegir tus peliculas favoritas, tener un apartado para estas, filtrar las peliculas por palabras claves, te muestra las películas más populares, tiene infinite scroll y otras cosas más.",
+        "imoviechild1": "Este es el inicio",
+        "imoviechild2": "Estas son unas listas en scroll horizontal que muestran los favoritos y las películas más populares.",
+        "imoviechild3": "Esta es toda la lista de películas, contiene un infinite scroll para que nunca te dejen de aparecer nuevas peliculas.",
+        "ipetchild1": "Este es el inicio, donde te muestra todas las fotos de animales, y eliges la categoria de animales que quieres ver.",
+        "ipetchild2": "Este es el checkout, donde te puedes registrar o acceder a tu cuenta ya existente, es necesario para añadir fotos como favoritas.",
+        "ipetchild3": "Después de estár registrado, esta es la sección de tus mascotas favoritas."
     }
 }

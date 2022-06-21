@@ -22,7 +22,6 @@
    z-index: 2;
    max-height: 500px;
    position: relative;
-   
 }
 .carousel .slide.pet{
     display: flex;
@@ -30,13 +29,8 @@
 }
 .carousel .slide img{
     width: 100%;
-   vertical-align: top;
-}
-.carousel .slide .img1{
-    width:56%;
-   vertical-align: top;
-   max-height: 100%;
-   border-radius: 10px;
+    vertical-align: top;
+    height: 100%;
 }
 .butpet {
     background-color: black;

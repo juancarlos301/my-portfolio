@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./skill";
 import Carousel from './carousel'
 import Footer from "../components/Footer";
 import Hobbies from "./Hobbies";
-import Modal from "../Modal";
-import FirtsImage from "./pagesmodals/FirtsImage";
-import SecundImage from "./pagesmodals/secundImage";
-import ThirdImage from "./pagesmodals/thirdImage";
+
 //imagenes
 import col from '../image/col.png'
 import usa from '../image/uss.png'
@@ -30,32 +27,9 @@ const PhraseAndSkills = (props) => {
         { url: bs, id: "5", name: "Bootstrap" },
         { url: tall, id: "6", name: "Tallwindcss" }
     ]
-    const [openModal, setOpenModal] = useState(false)
     const f = props.t
-    const [openProject2, setOpenProject2] = useState(0)
 
 
-    const seeCarrusel = () => {
-        if (openProject2 === 0) {
-            return <FirtsImage
-                setOpenModal={setOpenModal}
-                f={f}
-            />
-        } else if (openProject2 === 1) {
-            return <SecundImage
-                setOpenModal={setOpenModal}
-                setOpenProyect2={setOpenProject2}
-
-                f={f}
-            />
-        } else if (openProject2 === 2) {
-            return <ThirdImage
-                setOpenModal={setOpenModal}
-                setOpenProyect2={setOpenProject2}
-
-            />
-        }
-    }
     return (
         <div className="uno">
             <motion.div className="container-p"
@@ -142,19 +116,10 @@ const PhraseAndSkills = (props) => {
                     />
                 </div>
             </motion.div>
-            {openModal && (
-                <Modal>
-                    {seeCarrusel()}
-                </Modal>
-            )}
             <div className="container-carousel">
                 <a name="abajo" href="none" className="apunto2">.</a>
                 <h1>{f("navbar.portfolio")}</h1>
                 <Carousel
-                    setOpenModal={setOpenModal}
-                    setOpenProyect2={setOpenProject2}
-                    f={f}
-
                 />
             </div>
             <div className="container-footer">

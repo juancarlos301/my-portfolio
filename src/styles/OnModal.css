@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Poppins:wght@100&display=swap');
 .container-modal{
-    width: 75%;
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
     background-color: black;
     border-radius: 15px;
-    animation: .5s modal ease-in-out;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    animation: modal 2s ease-in-out;
 }
 @keyframes modal {
     0%{
-        transform: translateY(-500px);
+        opacity: 0;
     }
     100%{
-        transform: translateY(0);
+        opacity: 1;
+
     }
 }
 .container-img{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-left: 5%;
+    
 }
 .container-img button{
     width: 100%;
@@ -35,33 +38,29 @@
     border-radius: 10px;
     cursor: pointer;
 }
-.container-img button .petimg{
-    width: 70%;
+.container-allcontent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .container-words{
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 5%;
+    width:70%;
+    margin-top: 40px;
 
 }
 .container-words p {
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgba(255, 250, 250, 0.986);
     font-family: 'Nunito Sans', sans-serif;
 }
 .containers-buttons{
     margin-bottom: 10px;
-    position: absolute;
-    top: 25%;
-    left: 70%;
-    max-width: 80px;
+    position: relative;
+    width: 200px;
     animation: 1.5s buttons ease-in-out;
-    
-}
-.containers-buttons.buttonspet{
-    left: 60%;
-    top: 6%;
-
+    padding: 10px;
 }
 
 @keyframes buttons {
@@ -75,77 +74,36 @@
 .containers-buttons a{
     text-decoration: none;
 }
-.containers-buttons a button{
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: burlywood;
-    padding: 2px;
+.containers-buttons button{
+    width: 100%;
+    background: linear-gradient(to bottom,#63b8ee 5%,#468ccf 100%);
+    background-color: #63b8ee;
     border-radius: 20px;
-    font-size: small;
-    margin: 5px 3px;
+    border: 1px solid #3866a3;
+    display: flex;
     cursor: pointer;
-    border: 0;
+    color: #14396a;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-shadow: 0px 1px 0px #1e1f20;
+    outline: none;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 .containers-buttons a button:hover{
-    background-color: darkolivegreen;
-}
-.containers-buttons  button{
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: burlywood;
-    padding: 2px;
-    border-radius: 20px;
-    font-size: medium;
-    margin: 5px 0;
-    cursor: pointer;
-    border: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    background: linear-gradient(to bottom,#1dbb38 5%,#69ff75 100%);
+    border: none;
 }
 .containers-buttons  button:hover{
-    background-color: rgb(177, 54, 38);
+    background: linear-gradient(to bottom,#ee1515 5%,#fc6f56 100%);
+    border: none;
 }
-.containers-buttons  button p{
-    margin: 0 4px;
+.containers-buttons  button svg{
+    margin-right: 8px;
+    fill: rgb(3, 4, 5);
 }
-@media (min-width: 800px) {
-    .containers-buttons a button{
-        padding: 6px;
-        margin: 7px 3px 7px 3px;
-        font-size: medium;
-
-    }
-    .containers-buttons.buttonspet{
-
-        top: 25%;
-    
-    }
-    .containers-buttons  button{
-        padding: 10px;
-        margin: 5px 15px 5px 10px;
-    }
-    .containers-buttons{
-    max-width: 120px;
-    }
-    }
-    @media (min-width: 1031px) {
-        .containers-buttons a button{
-            padding: 10px;
-            font-size: large;
-            margin: 10px 10px 10px 10px;
-        }
-        .containers-buttons  button{
-            padding: 10px;
-            font-size: large;
-            margin-right: auto;
-            margin-top: 10px;
-        }
-        .containers-buttons{
-        max-width: 200px;
-        }
-        
-        }
-    @media (min-width: 900px) {
-        .container-img button .petimg{
-            width: 50%;
-        }
-    }
