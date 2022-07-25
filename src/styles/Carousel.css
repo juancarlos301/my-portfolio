@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Nunito:wght@200&family=Poppins:wght@100&display=swap');
+
 .carousel{
     width: 80%;
     max-height:90vh ;
@@ -31,10 +32,13 @@
     width: 100%;
     vertical-align: top;
     height: 100%;
+   cursor: pointer;
+
 }
 .butpet {
     background-color: black;
     border: none;
+    padding: 0;
 }
 .container-text{
     width: 100%;
@@ -48,9 +52,15 @@
 .slide .container-text p{
     font-size: 20px;
     color: #ffffff;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif; 
     margin: 5px;
     font-weight: 600;
+}
+.slide button {
+    background-color: black;
+    border: none;
+    padding: 0;
+
 }
 .buttons {
     position: absolute;

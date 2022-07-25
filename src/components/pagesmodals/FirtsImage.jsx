@@ -4,7 +4,7 @@ import { useNavigate } from "react-router"
 import ConImag from "../containerImag";
 //css
 import '../../styles/OnModal.css'
-import Imagenp1 from '../../image/petgram2.png'
+import Imagenp1 from '../../image/petgram2.jpg'
 import Imagenp2 from '../../image/petgram1.png'
 import Imagenp3 from '../../image/petgram3.png'
 

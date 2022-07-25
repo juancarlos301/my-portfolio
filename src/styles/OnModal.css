@@ -96,11 +96,11 @@
     padding: 10px;
 }
 .containers-buttons a button:hover{
-    background: linear-gradient(to bottom,#1dbb38 5%,#69ff75 100%);
+    background: rgb(12, 85, 12);
     border: none;
 }
 .containers-buttons  button:hover{
-    background: linear-gradient(to bottom,#ee1515 5%,#fc6f56 100%);
+    background: red;
     border: none;
 }
 .containers-buttons  button svg{

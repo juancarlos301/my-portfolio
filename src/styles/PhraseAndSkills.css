@@ -7,16 +7,15 @@ width: 100%;
     border-radius: 50%;
     width: 100vw;
     height: 100vw;
-    display: flex;
-    justify-content: center;
     margin-top: 10%;
+    flex-wrap: wrap;
 }
 .div-probar {
     width: 100vw;
     display: flex;
     justify-content: center;
     height: fit-content;
-
+    flex-wrap: wrap;
 }
 .container-p div .imagenn{
     border-radius: 50%;
@@ -40,6 +39,7 @@ width: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 100vh;
 }
 .containerin .h1-skills {
     font-size: 3rem;
@@ -133,6 +133,11 @@ width: 100%;
 .containerh1 {
     min-width: 100%;
 }
+.parAndimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 @media (min-width:400px) {
     .containerin .h1-skills.spanish{ 
         font-size: 3rem;
@@ -146,6 +151,9 @@ width: 100%;
     .containerin .h1-skills.spanish{ 
         margin-right: 37vw;
         }
+        .uno .containerin {
+            margin-top: 50px;
+          }
     }
 @media (min-width:800px) {
 .uno .containerin .h1-skills {

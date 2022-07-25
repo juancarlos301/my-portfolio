@@ -3,21 +3,24 @@ import { useNavigate } from "react-router"
 import ConImag from "../containerImag"
 //css
 import '../../styles/OnModal.css'
-import Imageng1 from '../../image/imagen2.jpg'
-import Imageng2 from '../../image/imagen3.png'
+import Imagene1 from '../../image/commerce.jpg'
+import Imagene2 from '../../image/commerce2.jpg'
+import Imagene3 from '../../image/commerce3.jpg'
 
 
 import { BsFillXCircleFill, BsGithub } from "react-icons/bs";
 
-const SecundImage = (props) => {
+const FourthImage = (props) => {
     const f = props.f
     const navigate = useNavigate()
 
-    const { par1, par2, par3 } = ""
+    const par1 = f("modal.iCommerceChild1")
+    const par2 = f("modal.iCommerceChild2")
+    const par3 = f("modal.iCommerceChild3")
 
 
     const CloseModalse = () => {
-        props.setOpenProyect2(prevState => prevState - 1)
+        props.setOpenProyect2(prevState => prevState - 3)
         navigate('/')
     }
     return (
@@ -25,20 +28,20 @@ const SecundImage = (props) => {
         <div className="container-modal">
             <div className="container-img">
                 <ConImag
-                    Imagen1={Imageng1}
-                    Imagen2={Imageng2}
-                    Imagen3={Imageng1}
+                    Imagen1={Imagene1}
+                    Imagen2={Imagene2}
+                    Imagen3={Imagene3}
 
                     par1={par1}
                     par2={par2}
                     par3={par3}
-                    title="Graphics"
+                    title="Ecommerce"
                 />
             </div>
             <div className="container-allcontent">
                 <div className="container-words">
-                    <p>{f("modal.imp1")}</p>
-                    <p>{f("modal.imp2")}</p>
+                    <p>{f("modal.icommercep1")}</p>
+                    <p>{f("modal.icommercep2")}</p>
                 </div>
                 <div className="containers-buttons">
                     <a href="/">
@@ -60,4 +63,4 @@ const SecundImage = (props) => {
         </div>
     )
 }
-export default SecundImage;
+export default FourthImage;

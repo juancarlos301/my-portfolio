@@ -3,6 +3,7 @@ import { AppContext } from "../context";
 import FirtsImage from "../components/pagesmodals/FirtsImage";
 import SecundImage from "../components/pagesmodals/secundImage";
 import ThirdImage from "../components/pagesmodals/thirdImage";
+import FourthImage from "../components/pagesmodals/fourthImage";
 import '../styles/index.css'
 
 const Detail = () => {
@@ -24,7 +25,13 @@ const Detail = () => {
                 setOpenProyect2={setOpenProject2}
                 f={t}
             />
+        } else if (openProject2 === 3) {
+            return <FourthImage
+                setOpenProyect2={setOpenProject2}
+                f={t}
+            />
         }
+
     }
     return (
         <div className="backDetail">

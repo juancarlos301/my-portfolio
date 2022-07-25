@@ -2,16 +2,18 @@ import React, { useContext, useRef } from "react";
 import '../styles/Carousel.css'
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 //imagenes
-import Img1 from '../image/petgram2.png'
-import Img2 from '../image/imagen2.png'
-import Img3 from '../image/movie1.png'
+import Img1 from '../image/petgram2.jpg'
+import Img2 from '../image/imagen2.jpg'
+import Img3 from '../image/movie1.jpg'
+import Img4 from '../image/commerce.jpg'
+
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from "../context";
 const Carousel = () => {
     const navigate = useNavigate()
     const { t, setOpenProject2 } = useContext(AppContext)
-
     const f = t
+
     const onClickButton = () => {
         navigate('/detail')
     }
@@ -22,6 +24,10 @@ const Carousel = () => {
     }
     const onClickButton3 = () => {
         setOpenProject2(prevState => prevState + 2)
+        navigate('/detail')
+    }
+    const onClickButton4 = () => {
+        setOpenProject2(prevState => prevState + 3)
         navigate('/detail')
     }
 
@@ -101,7 +107,17 @@ const Carousel = () => {
                     </button>
 
                     <div className="container-text">
-                        <p>{f("carousel.p2")}</p>
+                        <p>{f("carousel.p3")}</p>
+                    </div>
+                </div>
+                <div className="slide">
+                    <button
+                        onClick={onClickButton4}
+                    >
+                        <img src={Img4} alt="" className="img" />
+                    </button>
+                    <div className="container-text">
+                        <p>{f("carousel.p4")}</p>
                     </div>
                 </div>
             </div>

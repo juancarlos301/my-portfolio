@@ -1,0 +1,122 @@
+.containerbuttonccv{
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerbuttonccv a {
+    text-decoration: none;
+}
+.containerbuttonccv .buttonimg{
+
+    background-color: transparent;
+    max-width: 300px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+}
+.containerbuttonccv .buttonimg:hover{
+background-color: rgb(14, 14, 138);
+}
+.containerbuttonccv .buttonimg img{
+border-radius: 50%;
+position: relative;
+width: 300px;
+height: 300px;
+}
+.containerbuttonccv .buttonimg:hover img{
+    mix-blend-mode: multiply;
+    filter: blur(2px);
+    filter: grayscale(100%);
+
+}
+.after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    
+}
+.after h2{
+    color: rgb(201, 201, 201);
+    text-shadow: 5px 3px 4px #000;
+}
+.buttonimg:hover .after {
+    opacity: 1;
+    transition: 2.5s;
+}
+.containerNube {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.containerNube svg {
+    fill: rgba(212, 212, 212, 0.849);
+    margin: 0 10px;
+}
+.containerNube h1 {
+color: #fff;
+
+}
+@media (min-width: 800px) {
+.containerNube {
+    margin-right: 10px;
+        width: 30vw;
+}
+.containerbuttonccv{
+flex-wrap: nowrap;
+}
+.containerbuttonccv .buttonimg{
+    max-width: 300px;
+}
+}
+@media (max-width:799px) {
+
+.containerbuttonccv .buttonimg img{
+    height: 180px;
+    width: 180px;
+    }
+    .after {
+        height: 180px;
+        width: 180px;
+        
+    }
+}
+@media (max-width:600px) {
+    .containerNube {
+        width: 65%;
+    }
+.containerbuttonccv .buttonimg img{
+height: 200px;
+width: 200px;
+}
+.after {
+    height: 200px;
+    width: 200px;
+    
+}
+.containerbuttonccv{
+margin-top: 150px;
+}
+}
+@media (min-width: 1000px) {
+    .containerbuttonccv .buttonimg{
+        max-width: 300px;
+    }
+    .containerbuttonccv{
+        margin-top: 30px;
+        }
+        
+}

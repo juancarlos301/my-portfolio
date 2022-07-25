@@ -22,11 +22,15 @@
         "read": "Leer",
         "ejercise": "Ejercitarme",
         "play": "Jugar Ajedrez",
-        "other": "Otros"
+        "other": "Otros",
+        "buttoncv": "Ver mi cv",
+        "click": "Dale click!"
     },
     "carousel": {
         "p1": "Esta es una aplicació tipo instagram, haz clic en ella y conoce más.",
-        "p2": "Estos son gráficos hechos con React-Charts, haz clic en él si quieres ver más al respecto."
+        "p2": "Estos son gráficos hechos con React-Charts, haz clic en él si quieres ver más al respecto.",
+        "p3": "Esta es una página web de películas. dale click si quieres saber más.",
+        "p4": "Este es un ecommerce. dale click si quieres saber más."
     },
     "footer": {
         "contact": "¡Encuéntrame aquí!"
@@ -46,6 +50,11 @@
         "imoviechild3": "Esta es toda la lista de películas, contiene un infinite scroll para que nunca te dejen de aparecer nuevas peliculas.",
         "ipetchild1": "Este es el inicio, donde te muestra todas las fotos de animales, y eliges la categoria de animales que quieres ver.",
         "ipetchild2": "Este es el checkout, donde te puedes registrar o acceder a tu cuenta ya existente, es necesario para añadir fotos como favoritas.",
-        "ipetchild3": "Después de estár registrado, esta es la sección de tus mascotas favoritas."
+        "ipetchild3": "Después de estár registrado, esta es la sección de tus mascotas favoritas.",
+        "icommercep1": "Esta es una pagina web de un ecommerce, creado a partir de react, styled components,css, Html y la api de Codealo.",
+        "icommercep2": "El proyecto tiene características muy interesantes como  detalle de cada producto, poder agregarlo al carrito de compras, en el carrito de compras agregar o quitar cantidades del artículo, inicio de sesión, historial de compras, y muchas cosas más.",
+        "iCommerceChild1": "Esta es la página principal, aqui puedes agregar productos al carrito de compras, ver los detalles de cada producto, filtrar por su nombre o por categorias.",
+        "iCommerceChild2": "Este es el carrito de compras, aqui puedes añadir o eliminar cantidad a los productos seleccionados y continuar tu pedido.",
+        "iCommerceChild3": "Este es el login obligatorio para realizar tu compra y poder continuar tu pedido."
     }
 }

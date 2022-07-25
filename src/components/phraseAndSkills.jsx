@@ -18,6 +18,7 @@ import tall from '../image/tall.png'
 //css
 import '../styles/PhraseAndSkills.css'
 import imape from '../image/perfil.jpg'
+import ButtonCv from "./buttonccv";
 const PhraseAndSkills = (props) => {
     const hola = [
         { url: html, id: "1" },
@@ -40,8 +41,13 @@ const PhraseAndSkills = (props) => {
                 }}
             >
                 <div className="div-probar">
-                    <p className="parrafo-1">"{f("skills.sentence")}"</p>
-                    <img className="imagenn" src={imape} alt="" />
+                    <div className="parAndimg">
+                        <p className="parrafo-1">"{f("skills.sentence")}"</p>
+                        <img className="imagenn" src={imape} alt="" />
+                    </div>
+                    <div>
+                        <ButtonCv f={f} />
+                    </div>
                 </div>
             </motion.div>
             <motion.div className="containerin"

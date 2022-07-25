@@ -21,11 +21,15 @@
         "read": "Read",
         "ejercise": "Do exercise",
         "play": "Play Chess",
-        "other": "Others"
+        "other": "Others",
+        "buttoncv": "See my cv",
+        "click": "Click on it!"
     },
     "carousel": {
         "p1": "This is an instagram type app, click on it and learn more.",
-        "p2": "These are graphs made with React-Charts, click on it if you want to see more about it."
+        "p2": "These are graphs made with React-Charts, click on it if you want to see more about it.",
+        "p3": "This is a movie website. Click if you want to know more.",
+        "p4": "This is an ecommerce. Click if you want to know more."
     },
     "footer": {
         "contact": "Find me here!"
@@ -45,6 +49,11 @@
         "imoviechild3": "This is the entire list of movies, it contains an infinite scroll so that new movies never stop appearing.",
         "ipetchild1": "This is the beginning, where it shows you all the animal photos, and you choose the category of animals you want to see.",
         "ipetchild2": "This is the checkout, where you can register or access your existing account, it is necessary to add photos as favorites.",
-        "ipetchild3": "After you are registered, this is the section of your favorite pets."
+        "ipetchild3": "After you are registered, this is the section of your favorite pets.",
+        "icommercep1": "This is a web page of an ecommerce, created from react, styled components, css, Html and the Codealo api.",
+        "icommercep2": "The project has very interesting features such as details of each product, being able to add it to the shopping cart, add or remove quantities of the item in the shopping cart, login, purchase history, and more.",
+        "iCommerceChild1": "This is the main page, here you can add products to the shopping cart, see the details of each product, filter by name or by category.",
+        "iCommerceChild2": "This is the shopping cart, here you can add or remove quantity to the selected products and continue your order.",
+        "iCommerceChild3": "This is the required login to make your purchase and be able to continue your order."
     }
 }
