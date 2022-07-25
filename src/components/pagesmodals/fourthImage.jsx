@@ -44,7 +44,7 @@ const FourthImage = (props) => {
                     <p>{f("modal.icommercep2")}</p>
                 </div>
                 <div className="containers-buttons">
-                    <a href="/">
+                    <a href="https://github.com/juancarlos301/codealo-commerce" target="_blank" rel="noreferrer">
                         <button>
                             <BsGithub size="28px" />
                             {f("modal.git")}
