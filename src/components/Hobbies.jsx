@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+
+
 //img
-import imagenL from '../image/leer.png'
-import imagenE from '../image/salud.png'
-import imagenA from '../image/ajedrez.png'
+
+import { FaChessKnight, FaBook, FaVolleyballBall } from "react-icons/fa";
+
 
 //css
 import '../styles/Hobbies.css'
@@ -13,64 +15,78 @@ const Hobbies = (props) => {
 
     return (
         <div className="c-hobbies">
-
-            <motion.p className="p-first"
-                initial={{ x: 200 }}
-                whileInView={{ x: 1 }}
+            <div className="container-title">
+            <motion.h2 className="p-first"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1.2 }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 2.5,
                     ease: "easeOut",
                     type: "spring"
                 }}>
-                {f("skills.hobbies")}</motion.p>
+                {f("skills.hobbies")}</motion.h2>
+            </div>
             <div className="hobbies">
-
-
                 <motion.div className="hobbie"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 2,
                         ease: "easeOut",
                         type: "spring"
                     }}
                 >
-                    <p>{f("skills.read")}</p>
-                    <img src={imagenL} alt=""></img>
+                    <div className="textPas">
+                        <p>{f("skills.read")}</p>
+                    </div>
+                    <FaBook size="100px" fill="white" />
                 </motion.div>
                 <motion.div className="hobbie"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 2.5,
                         ease: "easeOut",
                         type: "spring"
                     }}
                 >
-                    <p>{f("skills.ejercise")}</p>
-                    <img src={imagenE} alt=""></img>
+                    <div className="textPas">
+                        <p>{f("skills.ejercise")}</p>
+                    </div>
+                    <FaVolleyballBall size="100px" fill="white" />
                 </motion.div>
                 <motion.div className="hobbie"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 3,
                         ease: "easeOut",
                         type: "spring"
                     }}>
-                    <p>{f("skills.play")}</p>
-                    <img src={imagenA} alt=""></img>
+                    <div className="textPas">
+
+                        <p>{f("skills.play")}</p>
+                    </div>
+                    <FaChessKnight size="100px" fill="white" />
                 </motion.div>
                 <motion.div className="hobbie-punto"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+
                     transition={{
                         duration: 3.5,
                         ease: "easeOut",
                         type: "spring"
                     }}
                 >
-                    <p>{f("skills.other")}</p>
+                    <div className="textPas">
+                        <p>{f("skills.other")}</p>
+                    </div>
                     <div className="punto"></div>
                     <div className="punto"></div>
                     <div className="punto"></div>

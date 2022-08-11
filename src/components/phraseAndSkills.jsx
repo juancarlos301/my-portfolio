@@ -36,6 +36,7 @@ const PhraseAndSkills = (props) => {
             <motion.div className="container-p"
                 initial={{ scale: 1 }}
                 whileInView={{ scale: 1.4 }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 2
                 }}
@@ -51,22 +52,26 @@ const PhraseAndSkills = (props) => {
                 </div>
             </motion.div>
             <motion.div className="containerin"
-                whileInView={{ backgroundColor: "#0a081e" }}
+                whileInView={{ backgroundColor: "rgba(2, 14, 53, 0.979)" }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 1
                 }}
             >
                 <div className="div-skills">
-                    <motion.h1 className={props.view === 'es' ? "h1-skills spanish" : "h1-skills"}
+                    <div className="div-of-h1-skills">
+                    <motion.h2 className="h1-skills"
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1.2 }}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 2,
                             ease: "easeOut",
                             type: "spring"
                         }}
 
-                    >{f("navbar.skills")}</motion.h1>
+                    >{f("navbar.skills")}</motion.h2>
+                    </div>
                     {hola.map(i => (
                         <Skill
                             imag={i.url}
@@ -77,9 +82,10 @@ const PhraseAndSkills = (props) => {
                 </div>
                 <div className="container-alllenguages">
                     <div className="containerh1">
-                        <motion.h1 className="h1-lenguages"
+                        <motion.h2 className="h1-lenguages"
                             initial={{ scale: 0 }}
                             whileInView={{ scale: 1.2 }}
+                            viewport={{ once: true }}
                             transition={{
                                 duration: 2,
                                 ease: "easeOut",
@@ -87,11 +93,12 @@ const PhraseAndSkills = (props) => {
                             }}
                         >
                             <a name="skills" href="none" className="apunto">.</a>
-                            {f("skills.languages")}</motion.h1>
+                            {f("skills.languages")}</motion.h2>
                     </div>
                     <motion.div className="div-col"
                         initial={{ x: 100 }}
                         whileInView={{ x: 1 }}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 3.5,
                             ease: "easeOut",
@@ -105,6 +112,7 @@ const PhraseAndSkills = (props) => {
                     <motion.div className="div-col"
                         initial={{ x: 150 }}
                         whileInView={{ x: 1 }}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 3.5,
                             ease: "easeOut",
@@ -115,7 +123,7 @@ const PhraseAndSkills = (props) => {
                     </motion.div>
                 </div>
 
-                <div className="hobbies-c">
+                <div className="con-hobbies">
                     <Hobbies
                         f={f}
                         view={props.view}
@@ -124,7 +132,9 @@ const PhraseAndSkills = (props) => {
             </motion.div>
             <div className="container-carousel">
                 <a name="abajo" href="none" className="apunto2">.</a>
+                <div className="div-title-portfolio">
                 <h1>{f("navbar.portfolio")}</h1>
+                </div>
                 <Carousel
                 />
             </div>

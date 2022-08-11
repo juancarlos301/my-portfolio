@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  font-family: 'Roboto Slab', serif;
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -28,7 +31,7 @@ code {
   
 }
 .container-1 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   margin: 0px 0 5px 3%;
   padding-top: 6%;
@@ -106,7 +109,18 @@ cursor: pointer;
 }
 .backDetail {
   background-color: #000;
+  min-width: 100%;
+  
 }
+/*animation: detail 1.5s ease-in-out;
+@keyframes detail {
+  0%{
+  opacity: 1;
+  }
+  100%{
+      opacity: 1;
+  }
+}*/
 
 @media (max-width: 800px) {
 .container-1 {

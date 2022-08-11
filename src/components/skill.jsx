@@ -8,6 +8,7 @@ const Skill = (props) => {
         <motion.div className="skills"
             initial={{ x: -100 }}
             whileInView={{ x: 1 }}
+            viewport={{ once: true }}
             transition={{
                 duration: 3.5,
                 ease: "easeOut",

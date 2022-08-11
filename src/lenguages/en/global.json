@@ -10,9 +10,9 @@
         "select": "Select language"
     },
     "my-personal": {
-        "p1": "I'm frontend development with a technical degree in software development at Sena, there was my start in development.",
-        "p2": "Almost all my knowledge I have acquired in a self-taught way, i love learning new things, technology, logic, sharing with people, among many other things.",
-        "p3": "Among those other things that I am passionate about is helping others and solving problems, and that is why I love being a software developer."
+        "p1": "I'm a frontend developer with a technical degree in software development at Sena, where I started my career.",
+        "p2": "Almost all my knowledge I have acquired in a self-taught way; I love learning new things, technology, logic, and sharing with people, among many other things.",
+        "p3": "Among those other things I am passionate about are helping others and solving problems, which is why I love being a software developer."
     },
     "skills": {
         "sentence": "Never stop growing, never stop learning, never stop dreaming",

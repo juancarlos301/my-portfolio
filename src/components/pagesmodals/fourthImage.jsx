@@ -46,7 +46,7 @@ const FourthImage = (props) => {
                 <div className="containers-buttons">
                     <a href="https://github.com/juancarlos301/codealo-commerce" target="_blank" rel="noreferrer">
                         <button>
-                            <BsGithub size="28px" />
+                            <BsGithub/>
                             {f("modal.git")}
                         </button>
                     </a>
@@ -54,7 +54,7 @@ const FourthImage = (props) => {
                     <button
                         onClick={CloseModalse}
                     >
-                        <BsFillXCircleFill size="28px" />
+                        <BsFillXCircleFill />
                         {f("modal.close")}
                     </button>
 

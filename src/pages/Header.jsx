@@ -21,8 +21,6 @@ const Header = () => {
         i18n.changeLanguage("es")
         setChoose(prevState => !prevState)
     }
-    const view = i18n.language
-
 
 
     return (
@@ -93,7 +91,6 @@ const Header = () => {
                     <div className="container-3" >
                         <PhraseAndSkills
                             t={t}
-                            view={view}
                         />
                     </div>
                 </>

@@ -1,15 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { AppContext } from "../context";
 import FirtsImage from "../components/pagesmodals/FirtsImage";
 import SecundImage from "../components/pagesmodals/secundImage";
 import ThirdImage from "../components/pagesmodals/thirdImage";
 import FourthImage from "../components/pagesmodals/fourthImage";
+import Loader from "../components/Loader";
 import '../styles/index.css'
 
 const Detail = () => {
 
     const { openProject2, setOpenProject2, t } = useContext(AppContext)
-
+    const [loading, setLoading] = useState(true)
     const viewModal = () => {
         if (openProject2 === 0) {
             return <FirtsImage
@@ -31,12 +32,23 @@ const Detail = () => {
                 f={t}
             />
         }
-
     }
+useEffect(()=>{
+    setTimeout(()=> {
+        setLoading(false)
+
+    }, 2000)
+}, [])
+
+    console.log(loading)
     return (
-        <div className="backDetail">
+        <>
+            {loading ? <div><Loader/></div> :
+            <div className="backDetail">
             {viewModal()}
-        </div>
+            </div>
+    }   
+        </>
     )
 }
 export default Detail; 
