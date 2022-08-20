@@ -19,6 +19,7 @@ import tall from '../image/tall.png'
 import '../styles/PhraseAndSkills.css'
 import imape from '../image/perfil.jpg'
 import ButtonCv from "./buttonccv";
+
 const PhraseAndSkills = (props) => {
     const hola = [
         { url: html, id: "1" },
@@ -52,7 +53,7 @@ const PhraseAndSkills = (props) => {
                 </div>
             </motion.div>
             <motion.div className="containerin"
-                whileInView={{ backgroundColor: "rgba(2, 14, 53, 0.979)" }}
+                whileInView={{ backgroundColor: "rgba(8, 8, 8, 0.973)" }}
                 viewport={{ once: true }}
                 transition={{
                     duration: 1

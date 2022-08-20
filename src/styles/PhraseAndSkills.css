@@ -2,7 +2,12 @@
 width: 100%;
 }
 .container-p {
-    background-color: rgba(2, 14, 53, 0.979);
+    background-color:  rgb(25 74 94);
+    /*
+    rgb(25 74 94);
+    rgb(2 16 31);
+    rgb(7 19 66);
+    */
     border-radius: 50%;
     width: 100vw;
     height: 100vw;
@@ -27,13 +32,13 @@ width: 100%;
     font-size: medium;
     color: rgb(236, 236, 236);
     width: 30vw;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 20px 5px;
     font-weight: 500;
     margin-top: 21%;
 
 }
 .uno .containerin {
-    background-color: rgb(189, 119, 28);
+    background-color: #194a5e;
     position: relative;
     width: 100%;
     display: flex;
@@ -140,6 +145,7 @@ width: 100%;
     display: flex;
     justify-content: center;
 }
+
 @media (min-width:600px) {
     .container-p div .imagenn{
         width: 160px;
@@ -154,6 +160,9 @@ width: 100%;
             .containerin .h1-lenguages{
                 font-size: 3rem;
             }
+.container-p div .parrafo-1{
+padding-left: 20px;
+}
 
     }
 @media (min-width:800px) {
@@ -182,7 +191,7 @@ min-width: 700px;
     top: 54%;
 }
 .container-carousel{
-    margin-top: 700px;
+    margin-top: 200vh;
 }
 }
 @media (min-width:1316px) {

@@ -66,9 +66,8 @@ height: 300px;
     fill: rgba(212, 212, 212, 0.849);
     margin: 0 10px;
 }
-.containerNube h1 {
+.containerNube h2 {
 color: #fff;
-
 }
 @media (min-width: 800px) {
 .containerNube {
@@ -85,22 +84,26 @@ flex-wrap: nowrap;
 @media (max-width:799px) {
 
 .containerbuttonccv .buttonimg img{
-    height: 180px;
-    width: 180px;
+    height: 160px;
+    width: 160px;
     }
     .after {
-        height: 180px;
-        width: 180px;
+        height: 160px;
+        width: 160px;
         
     }
+.containerNube h2 {
+padding-left: 25px;
+}
+
 }
 @media (max-width:600px) {
     .containerNube {
         width: 65%;
     }
 .containerbuttonccv .buttonimg img{
-height: 200px;
-width: 200px;
+height: 150px;
+width: 150px;
 }
 .after {
     height: 200px;
@@ -116,7 +119,7 @@ margin-top: 40px;
         max-width: 300px;
     }
     .containerbuttonccv{
-        margin-top: 30px;
+        margin-top: 15%;
         }
         
 }

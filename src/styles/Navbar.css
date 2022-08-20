@@ -1,6 +1,9 @@
 .navbar { 
     padding-top: 10px;
     animation: 3s navbar 2.8s ease-in-out;
+    background-color: #194a5e;
+    display: flex;
+    justify-content: flex-end;
 }
 @keyframes navbar {
     0%{
@@ -14,28 +17,43 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
+    width: 60%;
+    justify-content: flex-end;
 }
-.navbar-content img{
-    width: 50px;
-}
+
 .navbar-content ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
     width: 90%;
+    margin: 10px 0;
 }
 
 .navbar-content ul li a{
     text-decoration: none;
-    color: black;
+    color: #8f8b8b;
     font-size: large;
-    transition: all ease-in-out 300ms;
+}
+.navbar-content ul li {
+position: relative;
 }
 .navbar-content ul li a:hover{
-    border-bottom: 0.3rem solid #000;
-    transition: 0.3s ease-in;
+    color: #ffffff;
+}
+.navbar-content ul li::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease-in-out 300ms;
+}
+.navbar-content ul li:hover::before{
+width: 100%;
 }
 .barras {
 display: none;
@@ -79,16 +97,14 @@ position: relative;
 color: white;
 padding: 5px;
 }
-.navbar-content img{
-    display: none;
-}
+
 .barras {
     position: absolute;
     margin-top: 4px;
     margin-bottom: 8px;
-    background-color: transparent;
+    background-color: #484848;
     background-image: none;
-    border: 1px solid rgba(255, 255, 255, 0.308);
+    border: 1px solid rgb(0 0 0 / 45%);
     border-radius: 4px;
     display: block;
     top:0;
@@ -108,8 +124,6 @@ padding: 5px;
 }
 
 }
-
-
 @media (min-width: 800px) {
     .navbar .navbar-content {
         padding: 0 0 0 80px;
@@ -118,13 +132,8 @@ padding: 5px;
         font-size: x-large;
     }
 }
-@media (min-width: 1316px) {
-.navbar-content ul li a{
-    font-size: xx-large;
-
-}
-.navbar-content img{
-    width: 80px;
-
+@media (min-width: 1100px) {
+.navbar .navbar-content {
+width: 50%;
 }
 }

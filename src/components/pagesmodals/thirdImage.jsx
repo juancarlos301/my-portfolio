@@ -4,7 +4,7 @@ import { BsFillXCircleFill, BsGithub } from "react-icons/bs";
 import { useNavigate } from "react-router"
 //css
 import '../../styles/OnModal.css'
-import Imagenm1 from '../../image/movie1.jpg'
+import Imagenm1 from '../../image/movie1.png'
 import Imagenm2 from '../../image/movie2.png'
 import Imagenm3 from '../../image/movie3.png'
 const ThirdImage = (props) => {

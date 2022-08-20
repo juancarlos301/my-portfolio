@@ -4,7 +4,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 //imagenes
 import Img1 from '../image/petgram2.jpg'
 import Img2 from '../image/imagen2.jpg'
-import Img3 from '../image/movie1.jpg'
+import Img3 from '../image/movie1.png'
 import Img4 from '../image/commerce.jpg'
 
 import { useNavigate } from 'react-router-dom';

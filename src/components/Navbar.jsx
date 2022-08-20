@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../styles/Navbar.css'
-import img from '../image/logo512.png'
 
 
 const Navbar = (props) => {
@@ -17,7 +16,6 @@ const Navbar = (props) => {
             <div
                 className={click ? "navbar-content open" : "navbar-content close"}
             >
-                <img src={img} alt="" />
                 <ul>
                     <li><a href="#my">{f("navbar.about-me")}</a></li>
                     <li><a href="#skills">{f("navbar.skills")}</a></li>

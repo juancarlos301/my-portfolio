@@ -40,7 +40,6 @@ useEffect(()=>{
     }, 2000)
 }, [])
 
-    console.log(loading)
     return (
         <>
             {loading ? <div><Loader/></div> :

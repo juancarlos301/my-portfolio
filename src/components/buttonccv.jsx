@@ -14,7 +14,7 @@ const ButtonCv = ({ f }) => {
     return (
         <div className="containerbuttonccv">
             <div className="containerNube">
-                <h1>{f("skills.click")}</h1>
+                <h2>{f("skills.click")}</h2>
                 {seeWidth ?
                     <BsFillArrowRightCircleFill size="40px" />
                     : <BsFillArrowDownCircleFill size="40px" />

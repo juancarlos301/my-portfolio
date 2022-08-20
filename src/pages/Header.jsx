@@ -40,7 +40,7 @@ const Header = () => {
                     }}
 
                 >{t("presents.me")}</motion.h1>
-                <motion.h2
+                <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{
@@ -49,8 +49,15 @@ const Header = () => {
                         delay: 4,
                         type: "spring"
                     }}
+                    className="div-frontend"
                 >
-                    Frontend developer</motion.h2>
+                    <h2>
+                    Frontend
+                    </h2>
+                    <h2>
+                    developer
+                    </h2>
+                    </motion.div>
                 {choose && (
                     <motion.div className="container-buttonsl"
                         initial={{ scale: 0 }}

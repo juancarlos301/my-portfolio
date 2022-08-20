@@ -10,7 +10,7 @@
 }
 .footer .footer-part-1 {
     min-width: 100%;
-    background-color: rgba(2, 14, 53, 0.979);
+    background-color: rgb(25 74 94);
     min-height: 25vh;
 }
 .footer-part-1 p:nth-child(1) {
